@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B7115FDA780EF8974E2648BA /* Pods_FitWell.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D6C87351D2625B06521083 /* Pods_FitWell.framework */; };
+		C38A0655F69BFBB5525049A0 /* Pods_FitWellTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E61B0FC970F3C1A468B605C /* Pods_FitWellTests.framework */; };
 		E64097C920F3477F00DA5E75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64097C820F3477F00DA5E75 /* AppDelegate.swift */; };
-		E64097CB20F3477F00DA5E75 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64097CA20F3477F00DA5E75 /* ViewController.swift */; };
 		E64097CE20F3477F00DA5E75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E64097CC20F3477F00DA5E75 /* Main.storyboard */; };
 		E64097D020F3477F00DA5E75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E64097CF20F3477F00DA5E75 /* Assets.xcassets */; };
 		E64097D320F3477F00DA5E75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E64097D120F3477F00DA5E75 /* LaunchScreen.storyboard */; };
 		E64097DE20F3477F00DA5E75 /* FitWellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64097DD20F3477F00DA5E75 /* FitWellTests.swift */; };
 		E64097E920F356C700DA5E75 /* RacesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64097E820F356C700DA5E75 /* RacesCell.swift */; };
 		E64097EB20F3572D00DA5E75 /* RacesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64097EA20F3572D00DA5E75 /* RacesVC.swift */; };
+		E6D73BB320F35B2D00A394AD /* RoundedCornersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D73BB220F35B2D00A394AD /* RoundedCornersView.swift */; };
+		E6D73BB720F35C9700A394AD /* ProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D73BB620F35C9700A394AD /* ProfileImageView.swift */; };
+		E6D73BB920F35E2400A394AD /* RacesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D73BB820F35E2400A394AD /* RacesModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,9 +32,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		05B9DCD48604D8E3CF8CC22D /* Pods-FitWellTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitWellTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FitWellTests/Pods-FitWellTests.release.xcconfig"; sourceTree = "<group>"; };
+		0BB2AFE03E8D8BB62ED360D9 /* Pods-FitWellTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitWellTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FitWellTests/Pods-FitWellTests.debug.xcconfig"; sourceTree = "<group>"; };
+		83B37079C1F31944A267DF9F /* Pods-FitWell.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitWell.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FitWell/Pods-FitWell.debug.xcconfig"; sourceTree = "<group>"; };
+		9E61B0FC970F3C1A468B605C /* Pods_FitWellTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FitWellTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9D6C87351D2625B06521083 /* Pods_FitWell.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FitWell.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E64097C520F3477F00DA5E75 /* FitWell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitWell.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E64097C820F3477F00DA5E75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E64097CA20F3477F00DA5E75 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E64097CD20F3477F00DA5E75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E64097CF20F3477F00DA5E75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E64097D220F3477F00DA5E75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -40,6 +48,10 @@
 		E64097DF20F3477F00DA5E75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E64097E820F356C700DA5E75 /* RacesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RacesCell.swift; sourceTree = "<group>"; };
 		E64097EA20F3572D00DA5E75 /* RacesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RacesVC.swift; sourceTree = "<group>"; };
+		E6D73BB220F35B2D00A394AD /* RoundedCornersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornersView.swift; sourceTree = "<group>"; };
+		E6D73BB620F35C9700A394AD /* ProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImageView.swift; sourceTree = "<group>"; };
+		E6D73BB820F35E2400A394AD /* RacesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RacesModel.swift; sourceTree = "<group>"; };
+		F098EE17C25F856080425C00 /* Pods-FitWell.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitWell.release.xcconfig"; path = "Pods/Target Support Files/Pods-FitWell/Pods-FitWell.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7115FDA780EF8974E2648BA /* Pods_FitWell.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,18 +67,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C38A0655F69BFBB5525049A0 /* Pods_FitWellTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00B873AD6AB098C594860183 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				83B37079C1F31944A267DF9F /* Pods-FitWell.debug.xcconfig */,
+				F098EE17C25F856080425C00 /* Pods-FitWell.release.xcconfig */,
+				0BB2AFE03E8D8BB62ED360D9 /* Pods-FitWellTests.debug.xcconfig */,
+				05B9DCD48604D8E3CF8CC22D /* Pods-FitWellTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		882C093973F16D4E2FDE838D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A9D6C87351D2625B06521083 /* Pods_FitWell.framework */,
+				9E61B0FC970F3C1A468B605C /* Pods_FitWellTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E64097BC20F3477E00DA5E75 = {
 			isa = PBXGroup;
 			children = (
 				E64097C720F3477F00DA5E75 /* FitWell */,
 				E64097DC20F3477F00DA5E75 /* FitWellTests */,
 				E64097C620F3477F00DA5E75 /* Products */,
+				00B873AD6AB098C594860183 /* Pods */,
+				882C093973F16D4E2FDE838D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -82,12 +118,11 @@
 			isa = PBXGroup;
 			children = (
 				E64097C820F3477F00DA5E75 /* AppDelegate.swift */,
-				E64097CA20F3477F00DA5E75 /* ViewController.swift */,
 				E64097EA20F3572D00DA5E75 /* RacesVC.swift */,
-				E64097E820F356C700DA5E75 /* RacesCell.swift */,
-				E64097CC20F3477F00DA5E75 /* Main.storyboard */,
-				E64097CF20F3477F00DA5E75 /* Assets.xcassets */,
-				E64097D120F3477F00DA5E75 /* LaunchScreen.storyboard */,
+				E6D73BBA20F35E2800A394AD /* DataModels */,
+				E6D73BB520F35C0400A394AD /* Custom Cells */,
+				E6D73BB120F35B1500A394AD /* CustomViews */,
+				E6D73BB420F35BD400A394AD /* Storyboards&Assets */,
 				E64097D420F3477F00DA5E75 /* Info.plist */,
 			);
 			path = FitWell;
@@ -102,6 +137,41 @@
 			path = FitWellTests;
 			sourceTree = "<group>";
 		};
+		E6D73BB120F35B1500A394AD /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				E6D73BB220F35B2D00A394AD /* RoundedCornersView.swift */,
+				E6D73BB620F35C9700A394AD /* ProfileImageView.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		E6D73BB420F35BD400A394AD /* Storyboards&Assets */ = {
+			isa = PBXGroup;
+			children = (
+				E64097CC20F3477F00DA5E75 /* Main.storyboard */,
+				E64097D120F3477F00DA5E75 /* LaunchScreen.storyboard */,
+				E64097CF20F3477F00DA5E75 /* Assets.xcassets */,
+			);
+			path = "Storyboards&Assets";
+			sourceTree = "<group>";
+		};
+		E6D73BB520F35C0400A394AD /* Custom Cells */ = {
+			isa = PBXGroup;
+			children = (
+				E64097E820F356C700DA5E75 /* RacesCell.swift */,
+			);
+			path = "Custom Cells";
+			sourceTree = "<group>";
+		};
+		E6D73BBA20F35E2800A394AD /* DataModels */ = {
+			isa = PBXGroup;
+			children = (
+				E6D73BB820F35E2400A394AD /* RacesModel.swift */,
+			);
+			path = DataModels;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -109,9 +179,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E64097E220F3477F00DA5E75 /* Build configuration list for PBXNativeTarget "FitWell" */;
 			buildPhases = (
+				C1F59B602CEEE059A70492DD /* [CP] Check Pods Manifest.lock */,
 				E64097C120F3477E00DA5E75 /* Sources */,
 				E64097C220F3477E00DA5E75 /* Frameworks */,
 				E64097C320F3477E00DA5E75 /* Resources */,
+				3ABF2DA963CE4A668E8D9E5F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,6 +198,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E64097E520F3477F00DA5E75 /* Build configuration list for PBXNativeTarget "FitWellTests" */;
 			buildPhases = (
+				01F640A714C2F1F0486E32A4 /* [CP] Check Pods Manifest.lock */,
 				E64097D520F3477F00DA5E75 /* Sources */,
 				E64097D620F3477F00DA5E75 /* Frameworks */,
 				E64097D720F3477F00DA5E75 /* Resources */,
@@ -200,14 +273,75 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		01F640A714C2F1F0486E32A4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FitWellTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3ABF2DA963CE4A668E8D9E5F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FitWell/Pods-FitWell-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FitWell/Pods-FitWell-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1F59B602CEEE059A70492DD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FitWell-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E64097C120F3477E00DA5E75 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E64097CB20F3477F00DA5E75 /* ViewController.swift in Sources */,
 				E64097C920F3477F00DA5E75 /* AppDelegate.swift in Sources */,
+				E6D73BB720F35C9700A394AD /* ProfileImageView.swift in Sources */,
 				E64097E920F356C700DA5E75 /* RacesCell.swift in Sources */,
+				E6D73BB320F35B2D00A394AD /* RoundedCornersView.swift in Sources */,
+				E6D73BB920F35E2400A394AD /* RacesModel.swift in Sources */,
 				E64097EB20F3572D00DA5E75 /* RacesVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -359,6 +493,7 @@
 		};
 		E64097E320F3477F00DA5E75 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83B37079C1F31944A267DF9F /* Pods-FitWell.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -375,6 +510,7 @@
 		};
 		E64097E420F3477F00DA5E75 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F098EE17C25F856080425C00 /* Pods-FitWell.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -391,6 +527,7 @@
 		};
 		E64097E620F3477F00DA5E75 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BB2AFE03E8D8BB62ED360D9 /* Pods-FitWellTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -408,6 +545,7 @@
 		};
 		E64097E720F3477F00DA5E75 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05B9DCD48604D8E3CF8CC22D /* Pods-FitWellTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

@@ -1,0 +1,6 @@
+framework module Pods_FitWellTests {
+  umbrella header "Pods-FitWellTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
