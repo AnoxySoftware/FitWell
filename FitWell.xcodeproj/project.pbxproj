@@ -13,6 +13,8 @@
 		E64097D020F3477F00DA5E75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E64097CF20F3477F00DA5E75 /* Assets.xcassets */; };
 		E64097D320F3477F00DA5E75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E64097D120F3477F00DA5E75 /* LaunchScreen.storyboard */; };
 		E64097DE20F3477F00DA5E75 /* FitWellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64097DD20F3477F00DA5E75 /* FitWellTests.swift */; };
+		E64097E920F356C700DA5E75 /* RacesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64097E820F356C700DA5E75 /* RacesCell.swift */; };
+		E64097EB20F3572D00DA5E75 /* RacesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64097EA20F3572D00DA5E75 /* RacesVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		E64097D920F3477F00DA5E75 /* FitWellTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FitWellTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E64097DD20F3477F00DA5E75 /* FitWellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitWellTests.swift; sourceTree = "<group>"; };
 		E64097DF20F3477F00DA5E75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E64097E820F356C700DA5E75 /* RacesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RacesCell.swift; sourceTree = "<group>"; };
+		E64097EA20F3572D00DA5E75 /* RacesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RacesVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,8 @@
 			children = (
 				E64097C820F3477F00DA5E75 /* AppDelegate.swift */,
 				E64097CA20F3477F00DA5E75 /* ViewController.swift */,
+				E64097EA20F3572D00DA5E75 /* RacesVC.swift */,
+				E64097E820F356C700DA5E75 /* RacesCell.swift */,
 				E64097CC20F3477F00DA5E75 /* Main.storyboard */,
 				E64097CF20F3477F00DA5E75 /* Assets.xcassets */,
 				E64097D120F3477F00DA5E75 /* LaunchScreen.storyboard */,
@@ -201,6 +207,8 @@
 			files = (
 				E64097CB20F3477F00DA5E75 /* ViewController.swift in Sources */,
 				E64097C920F3477F00DA5E75 /* AppDelegate.swift in Sources */,
+				E64097E920F356C700DA5E75 /* RacesCell.swift in Sources */,
+				E64097EB20F3572D00DA5E75 /* RacesVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,11 +364,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L9KT4T25TK;
 				INFOPLIST_FILE = FitWell/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.anoxy.FitWell;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -371,11 +380,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L9KT4T25TK;
 				INFOPLIST_FILE = FitWell/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.anoxy.FitWell;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
