@@ -17,7 +17,6 @@
         </array>
         <array key="HelveticaNeueLights.ttc">
             <string>HelveticaNeue-Light</string>
-            <string>HelveticaNeue-Thin</string>
         </array>
     </customFonts>
     <scenes>
@@ -44,7 +43,7 @@
         <!--Races-->
         <scene sceneID="mIj-AX-MmX">
             <objects>
-                <viewController id="Vrj-g0-8My" customClass="RacesVC" customModule="FitWell" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="Vrj-g0-8My" customClass="RacesVC" customModule="FitWell" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HwW-v7-dAo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -117,7 +116,7 @@
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="0Lt-A0-4dV">
                                                             <rect key="frame" x="29" y="6" width="9" height="18"/>
-                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="15"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -224,7 +223,7 @@
         <!--Details-->
         <scene sceneID="Zjr-dd-BGw">
             <objects>
-                <viewController storyboardIdentifier="DetailsVC" title="Details" id="PFD-sM-82j" customClass="DetailsVC" customModule="FitWell" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailsVC" title="Details" automaticallyAdjustsScrollViewInsets="NO" id="PFD-sM-82j" customClass="DetailsVC" customModule="FitWell" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0Mk-Hv-Kzo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
