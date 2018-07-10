@@ -35,6 +35,8 @@
 		E6EE08DE20F4DA2E00EBAAB1 /* RaceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EE08DA20F4DA2D00EBAAB1 /* RaceData.swift */; };
 		E6EE08DF20F4DA2E00EBAAB1 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EE08DB20F4DA2E00EBAAB1 /* Route.swift */; };
 		E6EE08E120F4DF4B00EBAAB1 /* DetailHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6EE08E020F4DF4B00EBAAB1 /* DetailHeaderView.xib */; };
+		E6EE08E420F50BEB00EBAAB1 /* racesTest.json in Resources */ = {isa = PBXBuildFile; fileRef = E6EE08E220F50BEA00EBAAB1 /* racesTest.json */; };
+		E6EE08E520F50BEB00EBAAB1 /* profileTest.json in Resources */ = {isa = PBXBuildFile; fileRef = E6EE08E320F50BEB00EBAAB1 /* profileTest.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +85,8 @@
 		E6EE08DA20F4DA2D00EBAAB1 /* RaceData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RaceData.swift; sourceTree = "<group>"; };
 		E6EE08DB20F4DA2E00EBAAB1 /* Route.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		E6EE08E020F4DF4B00EBAAB1 /* DetailHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailHeaderView.xib; sourceTree = "<group>"; };
+		E6EE08E220F50BEA00EBAAB1 /* racesTest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = racesTest.json; sourceTree = "<group>"; };
+		E6EE08E320F50BEB00EBAAB1 /* profileTest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = profileTest.json; sourceTree = "<group>"; };
 		F098EE17C25F856080425C00 /* Pods-FitWell.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitWell.release.xcconfig"; path = "Pods/Target Support Files/Pods-FitWell/Pods-FitWell.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -165,6 +169,8 @@
 		E64097DC20F3477F00DA5E75 /* FitWellTests */ = {
 			isa = PBXGroup;
 			children = (
+				E6EE08E320F50BEB00EBAAB1 /* profileTest.json */,
+				E6EE08E220F50BEA00EBAAB1 /* racesTest.json */,
 				E64097DD20F3477F00DA5E75 /* FitWellTests.swift */,
 				E64097DF20F3477F00DA5E75 /* Info.plist */,
 			);
@@ -341,6 +347,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6EE08E420F50BEB00EBAAB1 /* racesTest.json in Resources */,
+				E6EE08E520F50BEB00EBAAB1 /* profileTest.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

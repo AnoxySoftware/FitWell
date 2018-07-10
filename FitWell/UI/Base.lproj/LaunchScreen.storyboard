@@ -10,6 +10,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue-BoldItalic</string>
+        </array>
         <array key="HelveticaNeueLights.ttc">
             <string>HelveticaNeue-Thin</string>
         </array>
@@ -31,9 +34,20 @@
                                 <color key="shadowColor" red="0.023529411760000001" green="0.14117647059999999" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <size key="shadowOffset" width="1" height="1"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sample App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="e0a-hz-QeD">
+                                <rect key="frame" x="15" y="186" width="345" height="50"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="41"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.023529411760000001" green="0.14117647059999999" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.3411764706" blue="0.043137254899999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.25490196079999999" green="0.34901960780000002" blue="0.58039215690000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="e0a-hz-QeD" firstAttribute="top" secondItem="LVn-DN-pDU" secondAttribute="bottom" constant="29" id="5GJ-kz-UFi"/>
+                            <constraint firstItem="e0a-hz-QeD" firstAttribute="trailing" secondItem="LVn-DN-pDU" secondAttribute="trailing" id="5xr-oy-CaA"/>
+                            <constraint firstItem="e0a-hz-QeD" firstAttribute="leading" secondItem="LVn-DN-pDU" secondAttribute="leading" id="MfG-Wg-Dn1"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LVn-DN-pDU" secondAttribute="trailing" constant="15" id="UWc-h5-72n"/>
                             <constraint firstItem="LVn-DN-pDU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="hvt-r0-wsX"/>
                             <constraint firstItem="LVn-DN-pDU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="t4X-Jm-USn"/>
