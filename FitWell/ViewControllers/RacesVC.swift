@@ -11,7 +11,7 @@ import UIKit
 class RacesVC : UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
-    var racesData = [RacesModel]()
+    let raceVM = RacesVM()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +19,7 @@ class RacesVC : UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        if racesData.count == 0 {
+        if !raceVM.hasData() {
             self.fetchData()
         }
     }
@@ -35,7 +35,8 @@ class RacesVC : UIViewController {
     func parseData(data : Data) {
         let decoder = JSONDecoder()
         do {
-            racesData = try decoder.decode([RacesModel].self, from: data)
+            let racesArray = try decoder.decode([RacesModel].self, from: data)
+            self.raceVM.setRaces(racesArray: racesArray)
             self.tableView.reloadData()
         }
         catch {
@@ -47,21 +48,21 @@ class RacesVC : UIViewController {
 
 extension RacesVC : UITableViewDataSource,UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return racesData.count
+        return self.raceVM.numberOfItemsInSection(section: section)
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "raceCell", for: indexPath) as! RacesCell
-        let raceModel = racesData[indexPath.row]
-        cell.configure(withModel: raceModel)
+        let raceModel = self.raceVM.dataForIndexPath(indexPath: indexPath)
+        cell.configure(withVM: raceModel)
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let raceModel = racesData[indexPath.row]
-        if let details = raceModel.hasDetails, details == true {
-            
+        let raceModel = self.raceVM.dataForIndexPath(indexPath: indexPath)
+        if !raceModel.detailsHidden {
+            let detailsVC = self.storyboard?.instantiateViewController(withIdentifier: "DetailsVC")
+            self.navigationController?.pushViewController(detailsVC!, animated: true)
         }
     }
-    
 }

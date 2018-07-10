@@ -19,16 +19,16 @@ class RacesCell : UITableViewCell {
     @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet weak var durationLabel: UILabel!
     
-    func configure(withModel model: RacesModel) {
-        self.locationLabel.text = model.locationName ?? ""
-        self.durationLabel.text = model.raceDuration?.timeIntervalAsString(allowedUnits: [.day,.hour]) ?? ""
-        self.detailArrow.isHidden = !(model.hasDetails ?? false)
-        self.raceLenghtLabel.text = String(format:NSLocalizedString("%@ KM", comment: "Track length in Kilometers"),model.raceLength?.description ?? "")
-        self.userRacesLabel.text = model.userCount?.description ?? ""
-        if let profileImageUrl = model.profileImageUrl {
-            self.profileImageView.af_setImage(withURL: profileImageUrl)
+    func configure(withVM model: RacesPresentable) {
+        self.locationLabel.text = model.location
+        self.durationLabel.text = model.duration
+        self.detailArrow.isHidden = model.detailsHidden
+        self.raceLenghtLabel.text = model.length
+        self.userRacesLabel.text = model.userRaces
+        if let profileURL = URL(string:model.profileURLString) {
+            self.profileImageView.af_setImage(withURL: profileURL)
         }
-        if let bgImageURL = model.bgImageURL {
+        if let bgImageURL =  URL(string:model.bgURLString) {
             self.bgImageView.af_setImage(withURL: bgImageURL)
         }
     }
