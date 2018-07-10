@@ -76,7 +76,6 @@ class NetworkManager: NSObject {
     }
     
     func fetchRaces(completion: @escaping RequestCompletion) {
-        //hardcoded for example only
         let urlString = "rg5uy"
         let requestMethod = HTTPMethod.get
         self.performRequest(urlString: urlString, method: requestMethod, parameters: nil,encoding: JSONEncoding.default, completion: completion)
@@ -84,7 +83,6 @@ class NetworkManager: NSObject {
 
     
     func fetchProfile(completion: @escaping RequestCompletion) {
-        //hardcoded for example only
         let urlString = "14td5u"
         let requestMethod = HTTPMethod.get
         self.performRequest(urlString: urlString, method: requestMethod, parameters: nil,encoding: JSONEncoding.default, completion: completion)
