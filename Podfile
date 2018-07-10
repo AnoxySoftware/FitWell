@@ -7,6 +7,7 @@ target 'FitWell' do
 
   pod 'Alamofire', '~> 4.7'
   pod 'AlamofireImage', '~> 3.3'
+  pod 'JGProgressHUD', '~> 2.0'
 
   target 'FitWellTests' do
     inherit! :search_paths

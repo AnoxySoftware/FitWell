@@ -19,6 +19,14 @@
 		E6D73BB320F35B2D00A394AD /* RoundedCornersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D73BB220F35B2D00A394AD /* RoundedCornersView.swift */; };
 		E6D73BB720F35C9700A394AD /* ProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D73BB620F35C9700A394AD /* ProfileImageView.swift */; };
 		E6D73BB920F35E2400A394AD /* RacesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D73BB820F35E2400A394AD /* RacesModel.swift */; };
+		E6D73BBE20F38B5900A394AD /* DetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D73BBD20F38B5900A394AD /* DetailCell.swift */; };
+		E6D73BC020F39EE900A394AD /* DetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D73BBF20F39EE900A394AD /* DetailHeaderView.swift */; };
+		E6D73BC420F39FEE00A394AD /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D73BC320F39FEE00A394AD /* ThemeManager.swift */; };
+		E6D73BC620F3A00700A394AD /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D73BC520F3A00700A394AD /* UIColor+Hex.swift */; };
+		E6D73BD020F3A7BD00A394AD /* UIViewController+Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D73BCF20F3A7BD00A394AD /* UIViewController+Error.swift */; };
+		E6D73BD220F3A7CC00A394AD /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D73BD120F3A7CC00A394AD /* UIHelper.swift */; };
+		E6EE08C820F49D7100EBAAB1 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EE08C720F49D7100EBAAB1 /* NetworkManager.swift */; };
+		E6EE08CA20F4AAF200EBAAB1 /* TimeInterval+Formatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EE08C920F4AAF200EBAAB1 /* TimeInterval+Formatting.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +59,14 @@
 		E6D73BB220F35B2D00A394AD /* RoundedCornersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornersView.swift; sourceTree = "<group>"; };
 		E6D73BB620F35C9700A394AD /* ProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImageView.swift; sourceTree = "<group>"; };
 		E6D73BB820F35E2400A394AD /* RacesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RacesModel.swift; sourceTree = "<group>"; };
+		E6D73BBD20F38B5900A394AD /* DetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCell.swift; sourceTree = "<group>"; };
+		E6D73BBF20F39EE900A394AD /* DetailHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHeaderView.swift; sourceTree = "<group>"; };
+		E6D73BC320F39FEE00A394AD /* ThemeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
+		E6D73BC520F3A00700A394AD /* UIColor+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
+		E6D73BCF20F3A7BD00A394AD /* UIViewController+Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Error.swift"; sourceTree = "<group>"; };
+		E6D73BD120F3A7CC00A394AD /* UIHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
+		E6EE08C720F49D7100EBAAB1 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		E6EE08C920F4AAF200EBAAB1 /* TimeInterval+Formatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeInterval+Formatting.swift"; sourceTree = "<group>"; };
 		F098EE17C25F856080425C00 /* Pods-FitWell.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitWell.release.xcconfig"; path = "Pods/Target Support Files/Pods-FitWell/Pods-FitWell.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -119,10 +135,12 @@
 			children = (
 				E64097C820F3477F00DA5E75 /* AppDelegate.swift */,
 				E64097EA20F3572D00DA5E75 /* RacesVC.swift */,
+				E6D73BCA20F3A21700A394AD /* API */,
 				E6D73BBA20F35E2800A394AD /* DataModels */,
-				E6D73BB520F35C0400A394AD /* Custom Cells */,
-				E6D73BB120F35B1500A394AD /* CustomViews */,
-				E6D73BB420F35BD400A394AD /* Storyboards&Assets */,
+				E6D73BB520F35C0400A394AD /* Cells & Headers */,
+				E6D73BB120F35B1500A394AD /* Custom Views */,
+				E6D73BC720F3A00B00A394AD /* Extensions & Helpers */,
+				E6D73BB420F35BD400A394AD /* UI */,
 				E64097D420F3477F00DA5E75 /* Info.plist */,
 			);
 			path = FitWell;
@@ -137,31 +155,34 @@
 			path = FitWellTests;
 			sourceTree = "<group>";
 		};
-		E6D73BB120F35B1500A394AD /* CustomViews */ = {
+		E6D73BB120F35B1500A394AD /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
 				E6D73BB220F35B2D00A394AD /* RoundedCornersView.swift */,
 				E6D73BB620F35C9700A394AD /* ProfileImageView.swift */,
 			);
-			path = CustomViews;
+			path = "Custom Views";
 			sourceTree = "<group>";
 		};
-		E6D73BB420F35BD400A394AD /* Storyboards&Assets */ = {
+		E6D73BB420F35BD400A394AD /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				E6D73BC320F39FEE00A394AD /* ThemeManager.swift */,
 				E64097CC20F3477F00DA5E75 /* Main.storyboard */,
 				E64097D120F3477F00DA5E75 /* LaunchScreen.storyboard */,
 				E64097CF20F3477F00DA5E75 /* Assets.xcassets */,
 			);
-			path = "Storyboards&Assets";
+			path = UI;
 			sourceTree = "<group>";
 		};
-		E6D73BB520F35C0400A394AD /* Custom Cells */ = {
+		E6D73BB520F35C0400A394AD /* Cells & Headers */ = {
 			isa = PBXGroup;
 			children = (
 				E64097E820F356C700DA5E75 /* RacesCell.swift */,
+				E6D73BBD20F38B5900A394AD /* DetailCell.swift */,
+				E6D73BBF20F39EE900A394AD /* DetailHeaderView.swift */,
 			);
-			path = "Custom Cells";
+			path = "Cells & Headers";
 			sourceTree = "<group>";
 		};
 		E6D73BBA20F35E2800A394AD /* DataModels */ = {
@@ -170,6 +191,25 @@
 				E6D73BB820F35E2400A394AD /* RacesModel.swift */,
 			);
 			path = DataModels;
+			sourceTree = "<group>";
+		};
+		E6D73BC720F3A00B00A394AD /* Extensions & Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E6D73BD120F3A7CC00A394AD /* UIHelper.swift */,
+				E6D73BCF20F3A7BD00A394AD /* UIViewController+Error.swift */,
+				E6D73BC520F3A00700A394AD /* UIColor+Hex.swift */,
+				E6EE08C920F4AAF200EBAAB1 /* TimeInterval+Formatting.swift */,
+			);
+			path = "Extensions & Helpers";
+			sourceTree = "<group>";
+		};
+		E6D73BCA20F3A21700A394AD /* API */ = {
+			isa = PBXGroup;
+			children = (
+				E6EE08C720F49D7100EBAAB1 /* NetworkManager.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,11 +341,13 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-FitWell/Pods-FitWell-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/JGProgressHUD/JGProgressHUD.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JGProgressHUD.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -338,11 +380,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				E64097C920F3477F00DA5E75 /* AppDelegate.swift in Sources */,
+				E6D73BC020F39EE900A394AD /* DetailHeaderView.swift in Sources */,
 				E6D73BB720F35C9700A394AD /* ProfileImageView.swift in Sources */,
+				E6EE08C820F49D7100EBAAB1 /* NetworkManager.swift in Sources */,
 				E64097E920F356C700DA5E75 /* RacesCell.swift in Sources */,
 				E6D73BB320F35B2D00A394AD /* RoundedCornersView.swift in Sources */,
+				E6D73BC620F3A00700A394AD /* UIColor+Hex.swift in Sources */,
 				E6D73BB920F35E2400A394AD /* RacesModel.swift in Sources */,
+				E6D73BBE20F38B5900A394AD /* DetailCell.swift in Sources */,
+				E6D73BC420F39FEE00A394AD /* ThemeManager.swift in Sources */,
+				E6EE08CA20F4AAF200EBAAB1 /* TimeInterval+Formatting.swift in Sources */,
+				E6D73BD020F3A7BD00A394AD /* UIViewController+Error.swift in Sources */,
 				E64097EB20F3572D00DA5E75 /* RacesVC.swift in Sources */,
+				E6D73BD220F3A7CC00A394AD /* UIHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

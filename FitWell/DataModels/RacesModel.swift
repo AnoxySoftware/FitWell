@@ -15,12 +15,15 @@ struct RacesModel: Codable {
     let raceLength: Double?
     let userCount: Int?
     let hasDetails: Bool?
+    let bgImageURL: URL?
     
     private enum CodingKeys: String, CodingKey {
         case locationName
         case profileImageUrl = "profile_image_url"
         case raceDuration = "duration"
+        case raceLength = "length"
         case userCount
         case hasDetails
+        case bgImageURL = "bg_img_url"
     }
 }
